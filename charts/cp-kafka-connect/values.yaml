@@ -20,6 +20,11 @@ imagePullSecrets:
 
 servicePort: 8083
 
+serviceAccount:
+  create: true
+  name: kafka-connect
+  annotations: {}
+
 ## Kafka Connect properties
 ## ref: https://docs.confluent.io/current/connect/userguide.html#configuring-workers
 configurationOverrides:
